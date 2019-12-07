@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация товаров</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="login-form" class="authorization">
+    <h1>Удалить товар</h1>
+    <fieldset>
+        <form action="/get" method="get">
+            <input name="id_delete" class="first" type="text" required value="Артикул" onBlur="if(this.value=='')this.value='Артикул'" onFocus="if(this.value=='Артикул')this.value='' ">
+            <input name="amount_delete" class="least" type="text" required value="Количество" onBlur="if(this.value=='')this.value='Количество'" onFocus="if(this.value=='Количество')this.value='' ">
+            <input type="submit" value="УДАЛИТЬ">
+        </form>
+    </fieldset>
+    <hr style="background-color : #bebebe;"/>
+    <h5><a id="newUser" href="">Зарегистрировать товары</a></h5>
+</div>
+<div id="registration" class="authorization">
+    <h1>Зарегистрировать товар</h1>
+    <fieldset>
+        <form action="/post" method="post">
+            <input name="id" type="text" id="iName" required value="Артикул" onBlur="if(this.value=='')this.value='Артикул'" onFocus="if(this.value=='Артикул')this.value='' ">
+            <input name="name" type="text" required value="Название" onBlur="if(this.value=='')this.value='Название'" onFocus="if(this.value=='Название')this.value='' ">
+            <input name="category" type="text" required value="Категория" onBlur="if(this.value=='')this.value='Категория'" onFocus="if(this.value=='Категория')this.value='' ">
+            <input name="date" type="text" required value="Дата" onBlur="if(this.value=='')this.value='Дата'" onFocus="if(this.value=='Дата')this.value='' ">
+            <input name="price" type="text" required value="Цена" onBlur="if(this.value=='')this.value='Цена'" onFocus="if(this.value=='Цена')this.value='' ">
+            <input name="amount" class="least" type="text" required value="Количество" onBlur="if(this.value=='')this.value='Количество'" onFocus="if(this.value=='Количество')this.value='' ">
+            <input type="submit" value="ЗАРЕГИСТРИРОВАТЬ">
+        </form>
+    </fieldset>
+    <hr style="background-color : #bebebe;"/>
+
+    <h5><a id="alreadyHaveAccount" href="">Удалить товары</a></h5>
+</div>
+<script src="lcs.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+<table>
+    <thead><th>id</th><th>name</th><th>category</th><th>date</th><th>price</th><th>amount</th></thead>
+    {{range . }}
+        <tr>
+            <td>{{.Id}}</td>
+            <td>{{.Name}}</td>
+            <td>{{.Category}}</td>
+            <td>{{.Date}}</td>
+            <td>{{.Price}}</td>
+            <td>{{.Amount}}</td>
+        </tr>
+    {{end }}
+</table>
+</body>
+</html>
