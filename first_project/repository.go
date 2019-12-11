@@ -29,16 +29,38 @@ func (r repository) saveProduct(c echo.Context) error{
 	r.InsertIntoDB(p)
 	return c.String(http.StatusOK, 	"")
 }
+//DELETE and UPDATE
 func (r repository) deleteProduct(c echo.Context) error {
-
 	id := c.FormValue("id_delete")
-	amount := c.FormValue("amount_delete")
-
-
+	amountStr := c.FormValue("amount_delete")
+	amount, _ := strconv.Atoi(amountStr)
+	row, err := r.db.Query("SELECT amount FROM products WHERE id=?", id)
+	amountRecord:=0
+	defer row.Close()
+	for row.Next() {
+		err = row.Scan(&amountRecord)
+	if amountRecord == amount {
+	_, err = r.db.Query("DELETE * FROM products WHERE id=?", id)
+	if err != nil {
+		log.Println("Не получилось удалить данные")
+		log.Println(err)
+	}}else {
+		if amountRecord > amount{
+			_, err = r.db.Query("UPDATE products SET amount=? WHERE id=?", amountRecord-amount, id)
+			if err != nil {
+				log.Println("Не получилось удалить данные")
+				log.Println(err)
+			}
+		}else{
+			return c.String(http.StatusOK, "К сожалению Вы что-то перепутали")
+		}
+	}}
+	log.Println(amountRecord)
 	log.Println("Сработал Get-запрос на удаление")
 
-	return c.String(http.StatusOK, "Удалено "+amount+" единиц товара с артикулом "+id)
+	return c.String(http.StatusOK, "Удалено "+amountStr+" единиц товара с артикулом "+id)
 }
+//READ
 func (r repository) getValuesFromDB(c echo.Context) error{
 	log.Println("Сейчас будем получать данные из базы данных" )
 	rows, err := r.db.Query("SELECT * FROM products")
