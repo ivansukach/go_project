@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>АВТОРИЗАЦИЯ</title>
+</head>
+<body>
+<div>Поздравляем! Вы успешно вошли в систему! </div>
+<fieldset>
+    <form action="/restricted" method="get">
+        <input id="setValue" type="hidden" name="token" value="Sukach">
+        <input id="putToken" type="submit" value="отправить Token">
+    </form>
+</fieldset>
+<div>Не закрывайте эту страницу - скоро произойдет автоматическая переадресация.</div>
+<div id="tkn">{{.Title}}</div>
+
+<script src="sign-in.js"></script>
+</body>
+</html>

@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Вход || Регистрация</title>
-    {{/*    <link rel="icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">*/}}
-    {{/*    <link rel="shortcut icon" href="http://vladmaxi.net/favicon.ico" type="image/x-icon">*/}}
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div>{{ .Title}}</div>
-<div>{{ .Message}}</div>
 <div id="login-form" class="authorization">
     <h1>Вход</h1>
     <fieldset>
-        <form action="javascript:void(0);" method="get">
-            <input type="email" required value="Логин" onBlur="if(this.value=='')this.value='Логин'" onFocus="if(this.value=='Логин')this.value='' ">
-            <input type="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
+        <form action="/sign-in" method="post">
+            <input name="username" type="text" required value="Логин" onBlur="if(this.value=='')this.value='Логин'" onFocus="if(this.value=='Логин')this.value='' ">
+            <input name="password" type="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
             <input type="submit" value="ВОЙТИ">
         </form>
     </fieldset>
@@ -26,7 +22,7 @@
 <div id="registration" class="authorization">
     <h1>Регистрация</h1>
     <fieldset>
-        <form action="localhost:8080/post" method="post">
+        <form action="/sign-up" method="post">
             <input name="name" id="iName" type="text" required value="Имя" onBlur="if(this.value=='')this.value='Имя'" onFocus="if(this.value=='Имя')this.value='' ">
             <input name="surname" type="text" required value="Фамилия" onBlur="if(this.value=='')this.value='Фамилия'" onFocus="if(this.value=='Фамилия')this.value='' ">
             <input name="age" type="text" required value="Возраст" onBlur="if(this.value=='')this.value='Возраст'" onFocus="if(this.value=='Возраст')this.value='' ">
