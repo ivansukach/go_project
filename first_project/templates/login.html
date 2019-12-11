@@ -11,8 +11,8 @@
     <h1>Вход</h1>
     <fieldset>
         <form action="/sign-in" method="post">
-            <input name="username" type="text" required value="Логин" onBlur="if(this.value=='')this.value='Логин'" onFocus="if(this.value=='Логин')this.value='' ">
-            <input name="password" type="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
+            <input name="username" type="text" class="first" required value="Логин" onBlur="if(this.value=='')this.value='Логин'" onFocus="if(this.value=='Логин')this.value='' ">
+            <input name="password" type="password" class="least" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
             <input type="submit" value="ВОЙТИ">
         </form>
     </fieldset>
@@ -23,11 +23,11 @@
     <h1>Регистрация</h1>
     <fieldset>
         <form action="/sign-up" method="post">
-            <input name="name" id="iName" type="text" required value="Имя" onBlur="if(this.value=='')this.value='Имя'" onFocus="if(this.value=='Имя')this.value='' ">
+            <input name="name" class="first" type="text" required value="Имя" onBlur="if(this.value=='')this.value='Имя'" onFocus="if(this.value=='Имя')this.value='' ">
             <input name="surname" type="text" required value="Фамилия" onBlur="if(this.value=='')this.value='Фамилия'" onFocus="if(this.value=='Фамилия')this.value='' ">
             <input name="age" type="text" required value="Возраст" onBlur="if(this.value=='')this.value='Возраст'" onFocus="if(this.value=='Возраст')this.value='' ">
             <input name="email" type="email" required value="Логин" onBlur="if(this.value=='')this.value='Логин'" onFocus="if(this.value=='Логин')this.value='' ">
-            <input name="password" type="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
+            <input name="password" class="least" type="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
             <input type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ">
         </form>
     </fieldset>

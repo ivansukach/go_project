@@ -17,95 +17,78 @@ a {
   color  : #fff;
 }
 a:hover{
-   text-decoration: underline;
+  text-decoration: underline;
 }
 .authorization {
-	background-color: #363636;
-	border-radius: 5px;
-	margin: 150px auto;
-	width: 300px;
-    font-family: 'verdana', sans-serif;
-	font-size: 16px;
-    box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  background-color: #363636;
+  border-radius: 5px;
+  margin: 150px auto;
+  width: 300px;
+  font-family: 'verdana', sans-serif;
+  font-size: 16px;
+  box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3);
 
 }
 .authorization h1 {
-	background-color: #292829;
-	border-radius: 5px 5px 0px 0px;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
-	text-transform: uppercase;
-    font-family: 'verdana', sans-serif;
-	font-size: 14px;
+  background-color: #292829;
+  border-radius: 5px 5px 0px 0px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'verdana', sans-serif;
+  font-size: 14px;
 }
 .authorization h5 {
-	text-align: center;
+  text-align: center;
 }
 .authorization fieldset {
-	border: none;
-	padding: 20px;
-	position: relative;
+  border: none;
+  padding: 20px;
+  position: relative;
 }
 .authorization fieldset form {
-	width: 270px;
+  width: 270px;
 }
 .authorization fieldset form input {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	outline: none;
-    width: 260px;
-    align: center;
-    position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  outline: none;
+  width: 238px;
+  align: center;
+  position: center;
 }
-#login-form fieldset form input[type="email"] {
-	border: 1px solid #292829;
-	border-radius: 5px 5px 0px 0px;
-	padding: 12px 10px;
-	width: 238px;
+.first {
+  border: 1px solid #292829;
+  border-radius: 5px 5px 0px 0px;
+  padding: 12px 10px;
+  width: 238px;
 }
-.authorization fieldset form input[type="password"] {
-	border: 1px solid #292829;
-	border-top: none;
-	border-radius: 0px 0px 5px 5px;
-	padding: 12px 10px;
-	width: 238px;
+.least {
+  border: 1px solid #292829;
+  border-radius: 0px 0px 5px 5px;
+  padding: 12px 10px;
 }
-
 .authorization fieldset form input[type="submit"] {
-	background-color: #ebebeb;
-	border: none;
-	border-radius: 3px;
-	color: #404040;
-	cursor: pointer;
-	float: none;
-	align: center;
-	font-weight: bold;
-	margin-top: 20px;
-	padding: 12px 12px;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 3px;
+  color: #404040;
+  cursor: pointer;
+  float: none;
+  align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px 12px;
 }
 .authorization fieldset form input[type="submit"]:hover {
-	background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 #registration fieldset form input{
-	border: 1px solid #292829;
-	padding: 12px 10px;
-	width: 238px;
-}
-#iName{
-	border: 1px solid #292829;
-	border-top: none;
-	border-radius: 5px 5px 0px 0px;
-	padding: 12px 10px;
-	width: 238px;
+  border: 1px solid #292829;
+  padding: 12px 10px;
 }
 #registration{
-    display: none;
+  display: none;
 }
-.least{
-	border: 1px solid #292829;
-	border-top: none;
-	border-radius: 0px 0px 5px 5px;
-	padding: 12px 10px;
-	width: 238px;
-}
+
