@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64261884-6476-4be9-834e-2739a6c5875e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/repository2.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go_build_first_project_.exe" beforeDir="false" afterPath="$PROJECT_DIR$/go_build_first_project_.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repisitory.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
